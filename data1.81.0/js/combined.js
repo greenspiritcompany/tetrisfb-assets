@@ -1982,7 +1982,7 @@ var Tetris = (function() {
         setTimeout(function() {
             $.ajax({
                 type: "GET",
-                url: "//" + Tetris.config.apiUrl + "/api/user/updatelocale?fbuid=" + Tetris.config.userID + "&locale=" + locale,
+                url: "//" + Tetris.config.apiUrl + "api/user/updatelocale?fbuid=" + Tetris.config.userID + "&locale=" + locale,
                 success: function(response) {
                     SpiritAccount.log(JSON.stringify(response));
                     if (response.locale) {
